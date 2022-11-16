@@ -1,3 +1,3 @@
 # aws-certified-advanced-networking-specialty-
-Study Notes
+Study Notes |
 This is the start.
