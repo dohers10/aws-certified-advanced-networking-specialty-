@@ -1,0 +1,13 @@
+## Fibre
+
+Sindlemode (LX) - uses laser optics, long distance, small core. 
+Multimode (OM) - Faster, shorter distances. Uses multiple modes ( rays) of light. 
+
+SFP - Single Form factor pluggable. 
+AWS DX supports 1000BASE-LX, 10GBASE-LR, 100GBASE-LR4.
+
+## DDOS
+App layer attacks - eg. HTTP floods (eg. ton of web requests)
+Protocol Attack - eg. SYN floods ( Eg. spoof IP addresses, consume network resources for TCP handshake)
+Columetric - eg. DNS amplification (eg. overhwlem DNS requests)
+
