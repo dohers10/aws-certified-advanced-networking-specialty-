@@ -1,4 +1,4 @@
-## Enc concepts
+# Enc concepts
 Plaintext - unencrytped data - images/apps/documents
 algorithams - AES, RC4, DES, RC5/RC6
 Key - eg. Password
@@ -13,3 +13,12 @@ Key signing - used for ID verification. Can use public key to verify encryption 
 
 Steganography - Another layer of protection; embed the data within something. Eg. hidden data within an image.
 
+Private Key - Decrypt and also sign/verification
+Public Key - encrypt 
+
+## Hashing
+    - examples - MD5 < SHA2-256
+    - DATA + has func = HASH
+    - Same Data = Same hash
+    - Cannot get original data from a hash
+    - dif data = diff hash
