@@ -1,0 +1,33 @@
+## General
+    - natgw - per-GB and hourly charge ( same region)
+    - data transfer to publiuc AWS services free ( same region)
+    - data transfer into AWS free of charge - transfering out costs!
+    - cross region data transfer costs for outbound
+    - same az diff subnets is FREE
+    - some services like RDS for cross AZ replication is free but GENERALLY this does cost.
+    - cross AZ data costs money inbound and outbound. Eg EC2 AZ-A to AZ-B
+
+## VPC-Peering
+    - data transfer same AZ same region cross vpc peer is FREE
+    - data transfer cross AZ same region - there is a charge ingress and egress
+    - data transfer cross region - on egress to region it costs, on the ingress its FREE. Same for response traffic
+
+## Transit
+    - each attachment has an hourly charge billed to attachment owner
+    - per GB processing charge for data sent TO the attachment owner
+    - data receiveed from TGW is FREE
+    - VPN attachment has inbound charges too
+    - Cross region  
+        - hourlsy cost for transit attachments to the owner
+        - per GB charge TO tgw 
+        - data received is FREE
+        - Inter-region peering tgw there is cost sending TO tgw ( not receiving, which is free), billed ion on e direction
+
+## DX
+    - hourly fee for DX port - gb, 10gb, 100gb
+    - data transfer OUT per gb cost
+    - data iunbound ( on prem to aws) FREE
+    - DX gateway and inter region
+        - no fees for using dx gateway
+        - data IN is fere
+        - data OUT from any region costs for per GB
