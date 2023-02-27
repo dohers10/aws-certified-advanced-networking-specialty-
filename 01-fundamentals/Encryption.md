@@ -22,3 +22,6 @@ Public Key - encrypt
     - Same Data = Same hash
     - Cannot get original data from a hash
     - dif data = diff hash
+
+## Digitial Signatures
+- Verify integrity ( what) and Authenticity ( who)

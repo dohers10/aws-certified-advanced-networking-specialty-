@@ -39,8 +39,13 @@
     - Default NACL with vpc allows all
     - Custom default denies all
     - Explicity allow and deny
-    
 
+
+## SGs
+    - Attached only to ENIs ( not instances etc)
+    - Cannot explicitly block traffic
+    - Ref a SG, refers to any resource that has that SG associated. Great for scaling and simplifies.
+    - Self referencing - allows all internal trafic to each other ( eg ASG with 30 instances can speak to each other)
 
 
 
