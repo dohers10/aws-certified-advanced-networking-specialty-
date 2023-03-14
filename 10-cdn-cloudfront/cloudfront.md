@@ -17,6 +17,7 @@
             - Can have many behaviours
             - eg. img/* go to diff S3 bucket
             - TTL, policies, private/public could be diff
+    - Field Level Encrpytion - happens at the edge location
 
 ## TTL & Invalidations
     - More frequenet cahce hits ( origin fetches) = lower origin load
@@ -51,5 +52,42 @@
         -> viewer -> cloudfront
         -> cloudfront -> Origin
     - Supporting SSL on old browsers require dedicated IP -> ~ $600 per month for CF! This is becasue tehy dont support SNI
-    
 
+## OAI/OAC - Origin Access Identities/ Origin Access Control 
+        - For restricting where access can come from
+                - OAC the now reccomended option
+                - OAI is attached to a resource such as Cloudfront
+
+## Geerestriction
+        - 2 types
+                - Cloudfront Geo Restriction
+                        - CF - Whitelist or Blacklist - COUNTRY only
+                        - CF - GEOIP DB is 99.8% accurate, applied to entire distribution
+                        - if country is not whitelisted or in blacklists - returns a 403 (forbidden) to user.
+                                        - Can be custom error
+                        
+                - 3rd Party Geolocation
+                        - Completly customasiable - can be MUCH more accurate! 
+                        - Can be based on users, browsers etc
+                        - 
+
+## Private behaviours, Signed URL & Cookies
+        - Private; requests require signed cookie or signed URL
+                - 2 ways to make private
+                        - OLD way -> cloudfront key
+                        - NEW way -> Trusted Key group(s) added. 
+        - Signed Urls - provide access to ONE oject ONLY
+                - Use is client DOESNT support cookies
+        - Cookies - Provides access to GROUPS of objects
+                - To maintain application URL, use cookie.
+
+# Lambada @ Edge
+        - Can run lightweight lambda at edge locations
+        - Adjust data between viewer & Oriign
+        - only Node.js and Python
+        - Can NOT access VPC ( runs in AWS public zone)
+        - Use-cases;
+                - Viewer request versions ( eg. change url based on anything)
+                - Migrating between S3 origins
+                - Different objects based on device ( eg. better devies better quality)
+                - 
