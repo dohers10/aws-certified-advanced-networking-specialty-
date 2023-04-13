@@ -13,4 +13,8 @@
             - Rule sets to match traffic
     - Route based VPNS (simple)
             - Send routes ( prefixes) over VPN
+
+## Client VPN
+        - Client VOPPN ENI exists in vpc
+        - Splut tunnel is NOT default- it must be enabled, otherwise all will go through tunnel
     
