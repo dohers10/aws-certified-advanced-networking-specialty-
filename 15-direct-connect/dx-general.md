@@ -62,3 +62,9 @@
         - active/active
         - all conns need to be the same speed
         - two 100GB ports or 4 ports if usnig less than 100GB. Max performance of 200GB!
+
+## DX Costs
+        - Hourly fee - based on speed and location
+        - Per GB fee for Data transgfer OUT of aws ( into onprem etc). Depends on region etc
+        - Data transfer IN to AWS is free of charge
+        - DX GW is FREE service! still has port hourly fee, data INTO aws is free. Data OUT of AWS ( into onprem) it costs per GB

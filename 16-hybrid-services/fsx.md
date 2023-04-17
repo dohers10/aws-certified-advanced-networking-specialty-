@@ -1,0 +1,15 @@
+## FSx for Windows
+        - for windows, integrates with DS or self managed AD
+        - fully managed native windows file servers
+        - single or Multi AZ within a vpc
+        - on-demand and scheduled backups
+        - can access using vpc, peering, vpn and DX
+        - shared files systems/windows/ad integration - > use this!
+        - suports volume shadow copies
+        - VSS - User driven restores, think FSx
+        - Native file system accessible over SMB! <- USE FSx
+        - Uses Windows permission model <- USE FSx
+        - SUpports DFS.. Scale-out file share structure <- USE FSx
+                - Can natively scale out or replication
+        - managed, no server admin
+        - Integrates with DS AND your own AD
