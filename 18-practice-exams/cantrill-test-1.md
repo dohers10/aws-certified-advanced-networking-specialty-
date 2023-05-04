@@ -13,3 +13,7 @@
 --> ensure each  DX connection can access public AWS services in that region only
         -> config a filter for 7224:8100 BGP community
                     -> 7224:8100—Routes that originate from the same AWS Region in which the AWS Direct Connect point of presence is associated.
+
+--> connection draining  -> specific to Classic load balancers
+
+--> Using secondary cidrs for VPCs running out of addressing
